@@ -3,6 +3,8 @@ const path = require("path");
 const PORT = process.env.PORT || 5000;
 const routes = require("./routes");
 const mongoose = require("mongoose");
+const passport = require("passport");
+const users = require("./routes/api/users");
 
 const app = express();
 
@@ -19,11 +21,17 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
+
+// Passport middleware
+app.use(passport.initialize());
+// Passport config
+require("./config/passport")(passport);
+
 // Including the routes
 app.use(routes);
 
 // Setting up mongoose connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fakazon");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/pokemon");
 
 // Starting up the server
 app.listen(PORT, () =>
