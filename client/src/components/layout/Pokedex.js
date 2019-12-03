@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import PokemonList from "./PokemonList.js";
-import SearchBar from "../search/SearchBar.js";
+import PokemonList from "../pokemon/PokemonList";
+import SearchBar from "../search/SearchBar";
 
-export default class Dashboard extends Component {
+export default class Pokedex extends Component {
   render() {
     return (
       <div className="row">
