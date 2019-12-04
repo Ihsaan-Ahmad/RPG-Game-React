@@ -63,6 +63,7 @@ class Login extends Component {
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
+              <label htmlFor="email">Email</label>
               <div className="input-field col s12">
                 <input
                   onChange={this.onChange}
@@ -74,12 +75,12 @@ class Login extends Component {
                     invalid: errors.email || errors.emailnotfound
                   })}
                 />
-                <label htmlFor="email">Email</label>
                 <span className="red-text">
                   {errors.email}
                   {errors.emailnotfound}
                 </span>
               </div>
+              <label htmlFor="password">Password</label>
               <div className="input-field col s12">
                 <input
                   onChange={this.onChange}
@@ -91,7 +92,6 @@ class Login extends Component {
                     invalid: errors.password || errors.passwordincorrect
                   })}
                 />
-                <label htmlFor="password">Password</label>
                 <span className="red-text">
                   {errors.password}
                   {errors.passwordincorrect}

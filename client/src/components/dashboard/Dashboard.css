@@ -1,0 +1,44 @@
+.col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  background: grey;
+  opacity: 90%;
+  margin: auto;
+  padding: 25px;
+  padding-top: 70px;
+}
+
+.col-md-3,
+.col-sm-6,
+.mb-5 {
+  margin: auto;
+  padding: 20px;
+}
+
+.col-12,
+.col-md-3,
+.mx-auto,
+.card-body,
+.card-title,
+.col-6 h6 {
+  color: whitesmoke;
+  background: unset;
+}
+
+.card-header,
+.col-5 h5 {
+  color: whitesmoke;
+}
+
+.card {
+  background-image: url("https://media0.giphy.com/media/TxVVB6PfWMjE4/giphy.gif");
+  background-size: repeat;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* #randomPokemon {
+  margin: auto;
+} */

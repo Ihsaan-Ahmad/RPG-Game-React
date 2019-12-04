@@ -49,7 +49,7 @@ function App(props) {
       <Provider store={store}>
         <Router>
           <div className="Home">
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow fixed-top">
               <div className="container">
                 <a className="navbar-brand" href="/">
                   <img style={styles.pokeball} src={pokeball} alt="pokeball" />

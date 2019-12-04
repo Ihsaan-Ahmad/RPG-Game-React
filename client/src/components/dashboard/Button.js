@@ -1,12 +1,20 @@
-import React, { Component } from "react";
-import Axios from "axios";
-import { Link } from "react-router-dom";
+// import React, { Component } from "react";
+// import Axios from "axios";
+// import { Link } from "react-router-dom";
 
-import styled from "styled-components";
+// import PokemonCard from "../pokemon/PokemonCard.js";
 
-import spinner from "../layout/spinner.gif";
+// import styled from "styled-components";
 
-/*if this button is clicked, on random amount of clicks,
- a pokemon image can appear */
+// import spinner from "../layout/spinner.gif";
 
-export default class Button extends Component {}
+// /*if this button is clicked, on random amount of clicks,
+//  a pokemon image can appear */
+
+// export default class Button extends Component {
+//   function(clicked) {
+//     if (clicked) {
+//       return { PokemonCard };
+//     }
+//   }
+// }
