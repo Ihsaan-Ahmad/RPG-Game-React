@@ -11,4 +11,23 @@ const store = createStore(
     // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
+
+if (process.env.NODE_ENV === "production") {
+  store = createStore(
+    rootReducer,
+    initialState,
+    compose(applyMiddleware(...middleware))
+  );
+} else {
+  store = createStore(
+    rootReducer,
+    initialState,
+    compose(
+      applyMiddleware(...middleware),
+      window.__REDUX_DEVTOOLS_EXTENSION__ &&
+        window.__REDUX_DEVTOOLS_EXTENSION__()
+    )
+  );
+}
+
 export default store;
